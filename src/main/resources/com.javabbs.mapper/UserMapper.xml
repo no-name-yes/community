@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.javabbs.mapper.UserMapper">
+<!--    <select id="selectALL" resultType="com.javabbs.pojo.User">-->
+<!--        select * from user;-->
+<!--    </select>-->
+<!--    <select id="select_one" resultType="com.javabbs.pojo.User">-->
+<!--        select user_id-->
+<!--        from user-->
+<!--        where user_name = #{name}-->
+<!--        and user_password = #{password}-->
+<!--    </select>-->
+
+<!--    <insert id="regis">-->
+<!--        insert user (user_id,user_name,user_password)-->
+<!--        into value(#{id},#{name},#{password})-->
+<!--    </insert>-->
+
+
+
+</mapper>

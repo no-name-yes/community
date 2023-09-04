@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+</head>
+<body>
+<h2>User Registration</h2>
+<form action="/test/RegisterServlet" method="Get">
+    Username: <input id="username" type="text" name="username"><br>
+    <span id="username_exit" style="display:none">用户名已存在</span>
+    Password: <input type="password" name="password"><br>
+    <input type="submit" value="Register">
+</form>
+<div>
+    <p>
+        <a href="/test/login.html">已有账户？前往登录</a>
+    </p>
+</div>
+
+<script>
+    document.getElementById("username").onblur=function(){
+    var username = this.value;
+
+
+    var xhttp;
+    //new一个新的对象才行
+    if (window.XMLHttpRequest) {
+    // 现代浏览器的代码
+    xhttp = new XMLHttpRequest();
+  } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+    xhttp.open("GET","http://localhost:8080/test/selectuserservlet?username="+username);
+    xhttp.send();
+
+    xhttp.onreadystatechange = function(){
+        if(this.readyState==4 && this.status == 200){
+             //alert(this.responseText);
+             if(this.responseText=="1")
+             {
+                 document.getElementById("username_exit").style.display='';
+             }else{
+                 document.getElementById("username_exit").style.display='none';
+                   }
+        };
+    };
+    }
+</script>
+
+
+</body>
+</html>
