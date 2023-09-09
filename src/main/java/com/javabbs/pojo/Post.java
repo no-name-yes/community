@@ -12,7 +12,17 @@ public class Post {
     private int count_of_browsers;
     private String category_id;
     private Integer author_id;
+
+    public String getTag() {
+        return tag;
+    }
+
+    public void setTag(String tag) {
+        this.tag = tag;
+    }
+
     private boolean post_if_visible;
+    private String tag;
 
     //新增一个帖子
     public void new_post(Post post){

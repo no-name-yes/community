@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [05/Sep/2023:15:21:16 +0800] "GET /test HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [05/Sep/2023:15:21:16 +0800] "GET /test/ HTTP/1.1" 200 52 http-bio-8080-exec-3 53
+0:0:0:0:0:0:0:1 - - [05/Sep/2023:15:21:22 +0800] "GET /test/register.html HTTP/1.1" 304 - http-bio-8080-exec-4 4
+0:0:0:0:0:0:0:1 - - [05/Sep/2023:15:21:24 +0800] "GET /test/login.html HTTP/1.1" 200 2101 http-bio-8080-exec-5 18
