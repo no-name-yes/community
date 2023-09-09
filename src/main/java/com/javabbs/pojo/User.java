@@ -23,6 +23,16 @@ public class User {
     private int count_of_posts;
     private int count_of_comments;
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
+
+    private String token;
+
     public Integer getUser_id() {
         return user_id;
     }

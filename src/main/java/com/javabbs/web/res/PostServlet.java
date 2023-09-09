@@ -25,6 +25,9 @@ public class PostServlet extends HttpServlet {
         String Post_text = req.getParameter("description");
         String Post_tag = req.getParameter("tag");
 
+
+
+
         Post post = new Post();
         post.setTag(Post_tag);
         //post.setPost_id();
@@ -33,16 +36,16 @@ public class PostServlet extends HttpServlet {
         Object user = session.getAttribute("user");
 
 
-        post.setPost_text();
-        post.setPost_title();
-        post.setPost_if_visible();
-        post.setCategory_id();
-        post.setCount_of_browsers();
-        post.setCount_of_comments();
-        post.setCount_of_likes();
-        post.setCount_of_private();
-        post.setCreate_time();
-        post.setUpdate_time();
+        post.setPost_text(Post_text);
+        post.setPost_title(Post_title);
+        post.setPost_if_visible(true);
+        //post.setCategory_id();
+        post.setCount_of_browsers(1);
+        post.setCount_of_comments(0);
+        post.setCount_of_likes(0);
+        post.setCount_of_private(0);
+        post.setCreate_time(String.valueOf(System.currentTimeMillis()));
+        post.setUpdate_time(post.getCreate_time());
 
     }
 }

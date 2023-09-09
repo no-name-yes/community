@@ -46,6 +46,14 @@ public class UserService {
         return user;
     }
 
+    public void alter_token(String name,String token){
+        SqlSession sqlSession = factory.openSession();
+        UserMapper usermapper = sqlSession.getMapper(UserMapper.class);
+        usermapper.updatetoken(name , token);
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
     //public
 
 
