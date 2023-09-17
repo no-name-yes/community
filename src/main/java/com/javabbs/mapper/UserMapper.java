@@ -21,7 +21,7 @@ public interface UserMapper {
 //    void add(@Param("name") String name, @Param("password")String password);
 
     //用户token查找
-    @Select("select * from user where token = #{token}}")
+    @Select("select * from user where token = #{token}")
     User findByToken(@Param("token")String token);
 
     //用户token更改

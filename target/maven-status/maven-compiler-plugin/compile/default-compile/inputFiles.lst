@@ -7,6 +7,7 @@ D:\project\jw\web\test\src\main\java\com\javabbs\util\SqlSessionFactoryUtils.jav
 D:\project\jw\web\test\src\main\java\com\javabbs\web\filter\filterdemo.java
 D:\project\jw\web\test\src\main\java\com\javabbs\web\res\RegisterServlet.java
 D:\project\jw\web\test\src\main\java\com\javabbs\web\servletdemo.java
+D:\project\jw\web\test\src\main\java\com\javabbs\web\res\PostServlet.java
 D:\project\jw\web\test\src\main\java\com\javabbs\mapper\UserMapper.java
 D:\project\jw\web\test\src\main\java\com\javabbs\pojo\Post.java
 D:\project\jw\web\test\src\main\java\com\javabbs\mapper\PostMapper.java

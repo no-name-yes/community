@@ -54,6 +54,14 @@ public class UserService {
         sqlSession.close();
     }
 
+    public User findbytoken(String token){
+        SqlSession sqlSession = factory.openSession();
+        UserMapper usermapper = sqlSession.getMapper(UserMapper.class);
+        User user = usermapper.findByToken(token);
+        sqlSession.close();
+        return user;
+    }
+
     //public
 
 

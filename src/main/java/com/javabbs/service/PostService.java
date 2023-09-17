@@ -19,6 +19,13 @@ public class PostService {
         return post;
     }
 
+    public void createpost(Post post){
+        SqlSession sqlSession = factory.openSession();
+        PostMapper postmapper = sqlSession.getMapper(PostMapper.class);
+        postmapper.post_post(post);
+        sqlSession.close();
+    }
+
 
 
 }
